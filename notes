@@ -1,0 +1,73 @@
+(char *) -  typecast some data type to char-type pointer
+
+*(char *) - accessing the content of the location to which the pointer variable points to
+
+example:
+
+variable ch
+(char *)ch - variable ch is typecasted to a char-type pointer
+*(char *)ch - accessing the content of ch
+
+unsigned char
+- variable that consumes all 8 bits of the memory
+- no sign bit
+- 0 to 255
+
+signed char vs unsigned char
+- basic ascii value range 0 to 127
+- 128~ is extended  ascii
+- char or signed char cannot store extended ascii values
+- unsigned char can store the extended ascii part bcuz range is 0 to 255
+
+size_t
+- unsigned integral type
+- size of any object in bytes and returned by sizeof operator
+- never negative
+
+FUNCTIONS
+atoi - converts str to int
+bzero - zero a byte string
+calloc - assigns multiple blocks of memory to a single variable (memory is set to 0) 
+		- returns pointer to the allocated memory
+malloc - creates a single block of memory of a specific size (allocates size bytes)
+		- returns a pointer to the allocated memory
+memchr - scans the initial n bytes of the memory area pointed to by s for the first instance of c
+		- both n and c are interpreted as unsigned char
+		- returns a pointer to the matching byte or null if c not found
+memcmp - compares the first n bytes (unsigned char) of the memory areas s1 and s2
+memcpy - copies n bytes from src to dest
+		- memory area must not overlap. Use memmove if overlap
+		- returns pointer to dest
+memmove - copies n bytes from src to dest
+		- memory area may overlap
+		- copying takes place as tho the bytes in src are first copied into a temp array that x overlap src or dest
+		- the bytes are then copied from the temp array to dest
+		- returns pointer to dest
+memset - fills the first n bytes of s with c
+		- returns pointer to s
+strchr - returns pointer to the first occurence of c in s
+strrchr - returns ptr to the last occur of c in s
+strdup - returns pointer to new string (dup of str s)
+strlcat - appends nul-terminated string src to end of dest
+		- at most size - strlen(dest) - 1 byte (null terminating the result)
+		- returns total len of initial len of dest plus len of src
+		- if x find null, len of str is size and dst x nul terminated
+strlcpy - copies upto size - 1 characters from nul-terminated string src to dest
+		- nul-terminating the results
+		- returns total len of string src
+strnstr - locates the first occurence of a substring in a string
+		- locates no more than len characters
+		- char after '\0' are not searched
+		- if substring is empty = return str
+		- if substring not found = null
+		- return ptr to first occur of substr
+substr - returns a part of a string
+		- pos# = start at a specified pos in str
+		- neg# = start at a specified pos from the end of str
+		- 0 = start at the first char in str
+		- len = specified the len of the returned str
+		- if len is null 0 or false =  return empty str
+		- if start+len > s , then recount len to s - start (prevent copy after s is null)
+strjoin - concat s1 and s2 to new string
+strtrim - returns s1 after char specified in set is removed from beg and end of the str
+split	- returns array of strings obtained by splitting s using c as delimiter
