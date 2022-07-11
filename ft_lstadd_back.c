@@ -1,32 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nchee <nchee@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/05 17:49:48 by nchee             #+#    #+#             */
-/*   Updated: 2022/07/11 18:10:22 by nchee            ###   ########.fr       */
+/*   Created: 2022/07/11 18:30:18 by nchee             #+#    #+#             */
+/*   Updated: 2022/07/11 19:26:39 by nchee            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *str)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	size_t	i;
+	t_list	*last;
 
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
+	if (!lst || !new)
+		return ;
+	if (!(*lst))
+	{
+		*lst = new;
+		return ;
+	}
+	last = ft_lstlast(*lst);
+	last->next = new;
 }
-/*
-#include <stdio.h>
-
-int main(void)
-{
-	char *str = "waffle";
-	printf("%zu", ft_strlen(str));
-}
-*/

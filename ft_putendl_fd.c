@@ -1,32 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nchee <nchee@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/05 17:49:48 by nchee             #+#    #+#             */
-/*   Updated: 2022/07/11 18:10:22 by nchee            ###   ########.fr       */
+/*   Created: 2022/07/11 15:15:24 by nchee             #+#    #+#             */
+/*   Updated: 2022/07/11 18:10:29 by nchee            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <unistd.h>
 
-size_t	ft_strlen(const char *str)
+void	ft_putendl_fd(char *s, int fd)
 {
-	size_t	i;
+	int	i;
 
+	if (!s)
+		return ;
 	i = 0;
-	while (str[i] != '\0')
+	while (s[i])
+	{
+		write(fd, &s[i], 1);
 		i++;
-	return (i);
+	}
+	write(fd, "\n", 1);
 }
-/*
-#include <stdio.h>
-
-int main(void)
-{
-	char *str = "waffle";
-	printf("%zu", ft_strlen(str));
-}
-*/

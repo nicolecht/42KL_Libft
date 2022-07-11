@@ -1,32 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nchee <nchee@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/05 17:49:48 by nchee             #+#    #+#             */
-/*   Updated: 2022/07/11 18:10:22 by nchee            ###   ########.fr       */
+/*   Created: 2022/07/11 18:52:44 by nchee             #+#    #+#             */
+/*   Updated: 2022/07/11 19:16:05 by nchee            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *str)
+void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	size_t	i;
-
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
+	if (!lst || !del)
+		return ;
+	del(lst->content);
+	free(lst);
 }
-/*
-#include <stdio.h>
-
-int main(void)
-{
-	char *str = "waffle";
-	printf("%zu", ft_strlen(str));
-}
-*/
