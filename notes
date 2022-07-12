@@ -71,3 +71,11 @@ substr - returns a part of a string
 strjoin - concat s1 and s2 to new string
 strtrim - returns s1 after char specified in set is removed from beg and end of the str
 split	- returns array of strings obtained by splitting s using c as delimiter
+
+// **dest || dest[0][0] (2d array)
+// |---------------------------------------|
+// | *dest + 0 = one   ||  dest[0] = one   |
+// | *dest + 1 = two   ||  dest[1] = two   |
+// | *dest + 2 = three ||  dest[2] = three |
+// | *dest + 3 = four  ||  dest[3] = four  |
+// |---------------------------------------| 

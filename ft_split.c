@@ -6,7 +6,7 @@
 /*   By: nchee <nchee@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 12:41:53 by nchee             #+#    #+#             */
-/*   Updated: 2022/07/11 14:18:28 by nchee            ###   ########.fr       */
+/*   Updated: 2022/07/12 13:00:29 by nchee            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	count_words(char const *s, char c)
 
 	count = 0;
 	i = 0;
-	while (s[i])
+	while (s[i] && s)
 	{
 		if (s[i] != c)
 		{
@@ -42,7 +42,7 @@ char	**ft_split(char const *s, char c)
 
 	if (!s)
 		return (0);
-	dest = malloc(sizeof(char *) * count_words(s, c) + 1);
+	dest = malloc(sizeof(char *) * (count_words(s, c) + 1));
 	if (!dest)
 		return (0);
 	start = 0;
@@ -61,11 +61,3 @@ char	**ft_split(char const *s, char c)
 	dest[i] = 0;
 	return (dest);
 }
-
-// **dest || dest[0][0] (2d array)
-// |---------------------------------------|
-// | *dest + 0 = one   ||  dest[0] = one   |
-// | *dest + 1 = two   ||  dest[1] = two   |
-// | *dest + 2 = three ||  dest[2] = three |
-// | *dest + 3 = four  ||  dest[3] = four  |
-// |---------------------------------------| 

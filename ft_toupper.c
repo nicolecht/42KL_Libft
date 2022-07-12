@@ -6,7 +6,7 @@
 /*   By: nchee <nchee@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 17:51:02 by nchee             #+#    #+#             */
-/*   Updated: 2022/07/07 17:38:10 by nchee            ###   ########.fr       */
+/*   Updated: 2022/07/12 11:43:47 by nchee            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,3 @@ int	ft_toupper(int c)
 	}
 	return (c);
 }
-/*
-#include <stdio.h>
-
-int main(void)
-{
-	int c = 'g';
-	printf("%c", ft_toupper(c));
-}
-*/

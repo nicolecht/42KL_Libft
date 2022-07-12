@@ -6,7 +6,7 @@
 /*   By: nchee <nchee@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/07 17:07:54 by nchee             #+#    #+#             */
-/*   Updated: 2022/07/07 17:38:14 by nchee            ###   ########.fr       */
+/*   Updated: 2022/07/12 11:29:16 by nchee            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,9 +50,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	dest[i] = 0;
 	return (dest);
 }
-
-//#include <stdio.h>
-//int main(void)
-//{
-//	printf("%s", ft_strtrim("wwaffleww", "w"));
-//}

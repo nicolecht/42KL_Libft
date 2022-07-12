@@ -6,7 +6,7 @@
 /*   By: nchee <nchee@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 17:46:41 by nchee             #+#    #+#             */
-/*   Updated: 2022/07/05 17:47:03 by nchee            ###   ########.fr       */
+/*   Updated: 2022/07/12 11:23:09 by nchee            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,3 @@ int	ft_isdigit(int c)
 		return (1);
 	return (0);
 }
-/*
-#include <stdio.h>
-
-int main(void)
-{
-	int c = '5';
-	printf("%d", ft_isdigit(c));
-}
-*/

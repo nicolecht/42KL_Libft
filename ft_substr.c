@@ -6,7 +6,7 @@
 /*   By: nchee <nchee@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 21:16:08 by nchee             #+#    #+#             */
-/*   Updated: 2022/07/08 12:09:50 by nchee            ###   ########.fr       */
+/*   Updated: 2022/07/12 11:29:20 by nchee            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	dest[len] = '\0';
 	return (dest);
 }
-
-//#include <stdio.h>
-//int main(void)
-//{
-//	printf("%s", ft_substr("waffle", 3, 2));
-//}

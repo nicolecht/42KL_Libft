@@ -6,7 +6,7 @@
 /*   By: nchee <nchee@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 17:48:12 by nchee             #+#    #+#             */
-/*   Updated: 2022/07/06 19:45:26 by nchee            ###   ########.fr       */
+/*   Updated: 2022/07/12 11:28:34 by nchee            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)(s + i));
 	return (0);
 }
-//#include <stdio.h>
-//#include <string.h>
-//
-//int main(void)
-//{
-//	printf("Standard Function: %s\n", strchr("waffle", '\0'));
-//	printf("Created Function: %s\n", ft_strchr("waffle", '\0'));
-//}

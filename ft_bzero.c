@@ -6,7 +6,7 @@
 /*   By: nchee <nchee@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 17:45:00 by nchee             #+#    #+#             */
-/*   Updated: 2022/07/06 18:55:41 by nchee            ###   ########.fr       */
+/*   Updated: 2022/07/12 11:27:29 by nchee            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,15 +23,3 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
-
-//#include <stdio.h>
-//#include <string.h>
-//
-//int main(void)
-//{
-//	char str[50] = "waffleicecream";
-//	bzero(str + 3, 1*sizeof(char));
-//	printf("Standard Function: " "%s\n", str);
-//	ft_bzero(str + 3, 1*sizeof(char));
-//	printf("Created Function: " "%s\n", str);
-//}

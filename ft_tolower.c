@@ -6,7 +6,7 @@
 /*   By: nchee <nchee@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 17:50:52 by nchee             #+#    #+#             */
-/*   Updated: 2022/07/05 17:51:16 by nchee            ###   ########.fr       */
+/*   Updated: 2022/07/12 11:29:27 by nchee            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,3 @@ int	ft_tolower(int c)
 	}
 	return (c);
 }
-/*
-#include <stdio.h>
-
-int main(void)
-{
-	int c = 'g';
-	printf("%c", ft_tolower(c));
-}
-*/

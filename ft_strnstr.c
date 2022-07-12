@@ -6,7 +6,7 @@
 /*   By: nchee <nchee@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 12:10:37 by nchee             #+#    #+#             */
-/*   Updated: 2022/07/11 15:00:15 by nchee            ###   ########.fr       */
+/*   Updated: 2022/07/12 11:29:04 by nchee            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,11 +36,3 @@ char	*ft_strnstr(const char *str, const char *to_find, size_t len)
 	}
 	return (0);
 }
-
-// #include <stdio.h>
-// #include <string.h>
-// int main(void)
-// {
-// 	printf("Standard Function: %s\n", strnstr("Waffle", "ff", 4));
-// 	printf("Created Function: %s", ft_strnstr("Waffle", "ff", 4));
-// }

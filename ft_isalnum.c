@@ -6,7 +6,7 @@
 /*   By: nchee <nchee@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 17:45:25 by nchee             #+#    #+#             */
-/*   Updated: 2022/07/06 20:16:56 by nchee            ###   ########.fr       */
+/*   Updated: 2022/07/12 11:23:13 by nchee            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,3 @@ int	ft_isalnum(int c)
 		return (1);
 	return (0);
 }
-//#include <stdio.h>
-// 
-//int main(void)
-//{
-//	int c = '1';
-//	printf("%d", ft_isalnum(c));
-//}

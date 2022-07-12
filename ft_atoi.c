@@ -6,7 +6,7 @@
 /*   By: nchee <nchee@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 12:43:50 by nchee             #+#    #+#             */
-/*   Updated: 2022/07/08 16:07:03 by nchee            ###   ########.fr       */
+/*   Updated: 2022/07/12 11:23:15 by nchee            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,19 +40,3 @@ int	ft_atoi(const char *str)
 	}
 	return (nbr * sign);
 }
-
-//#include <stdio.h>
-//int main(void)
-//{
-//	int val;
-//	char str[] = "  +1234567";
-//	char str2[] = "  +1234567";
-//	
-//	val = atoi(str);
-//	printf("Standard FT: string value = %s, int value =%d\n", str, val);
-//
-//	val = ft_atoi(str2);
-//	printf("Created FT: string value = %s, int value =%d\n", str2, val);
-//
-//	return (0);
-//}
