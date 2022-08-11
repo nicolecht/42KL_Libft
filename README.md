@@ -1,4 +1,4 @@
-# 42KL_Libft
+# 42_Libft
 
 The first project for 42 Core Programme.
 
